@@ -19,3 +19,35 @@ StudentPlannerAPI, öğrencilerin belirli tarih aralıklarında planlar oluştur
 * Öğrenci Yönetimi: Yeni öğrenciler eklenebilir ve mevcut öğrenciler silinebilir. 
 * Bir öğrenci silindiğinde, ona ait tüm planlar da silinir.
 * Listeleme: Seçilen öğrencinin planları haftalık veya aylık olarak listelenebilir.
+
+### Proje dizini yapısı
+```
+studentPlannerAPI/
+├── cmd
+│   └── main.go
+├── internal
+│    ├── database/
+│    │   └── database.go     
+│    ├── handlers/
+│    │   └── plan_handler.go
+│    │   └── student_handler.go
+│    ├── models/
+│    │   └── plan.go
+│    │   └── student.go
+│    └── routes/
+│        └── routes.go
+│    
+├── go.mod
+└── go.sum
+
+```
+### Faydalı Kaynaklar
+
+Bu API'yi yazarken karşılaştığım ve sizin de karşılaşabileceğiniz hata ve sorunları gidermede yararlı bulduğum içerik ve platformlar:
+* https://stackoverflow.com/questions/10299148/mysql-error-1045-28000-access-denied-for-user-billlocalhost-using-passw
+* https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y
+* https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+* https://dev.to/envitab/how-to-build-an-api-using-go-ffk
+* https://dev.to/ayoubzulfiqar/go-the-ultimate-folder-structure-6gj
+* https://www.programiz.com/golang/data-types
+* https://pkg.go.dev/time
