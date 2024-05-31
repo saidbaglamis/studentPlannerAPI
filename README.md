@@ -23,9 +23,9 @@ StudentPlannerAPI, öğrencilerin belirli tarih aralıklarında planlar oluştur
 ### Proje dizini yapısı
 ```
 studentPlannerAPI/
-├── cmd
+├── cmd/
 │   └── main.go
-├── internal
+├── internal/
 │    ├── database/
 │    │   └── database.go     
 │    ├── handlers/
