@@ -41,6 +41,14 @@ studentPlannerAPI/
 └── go.sum
 
 ```
+
+### Kullanım Hakkında
+**internal/database/database.go dosyasındaki:**
+```
+dsn := "root:password@tcp(127.0.0.1:3306)/plannerDB?charset=utf8mb4&parseTime=True&loc=Local"
+```
+**"plannerDB" yazan yeri kendi makinenizdeki çalışmak istediğiniz database ismiyle değiştirip bağlantı kurmanız gerekiyor**
+
 ### Faydalı Kaynaklar
 
 Bu API'yi yazarken karşılaştığım ve sizin de karşılaşabileceğiniz hata ve sorunları gidermede yararlı bulduğum içerik ve platformlar:
