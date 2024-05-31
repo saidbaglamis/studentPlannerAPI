@@ -1,14 +1,19 @@
-# studentPlannerAPI
+### StudentPlannerAPI
+#### Giriş
+Merhaba, bu API, bana gönderilen bir case için tarafımca yazılmıştır. Öğrencilerin planlarını yönetmelerine yardımcı olmak amacıyla tasarlanmıştır.
 
-#### Merhaba, bu api bana gönderilen bir case için tarafımca yazıldı.
-##### Kullanılan teknolojiler: Go, Gorm, Echo, MySQL
+#### Kullanılan Teknolojiler
+* Go: API geliştirme için ana programlama dili.
+* Gorm: Go için ORM (Object-Relational Mapping) kütüphanesi, veri tabanı işlemleri için kullanıldı.
+* Echo: Go ile yazılmış bir HTTP framework, API endpoint'lerinin yönetimi için kullanıldı.
+* MySQL: Veri tabanı yönetim sistemi olarak kullanıldı.
 
+### API Hakkında
+StudentPlannerAPI, öğrencilerin belirli tarih aralıklarında planlar oluşturmasını, bu planlar üzerinde değişiklik yapmasını ve planları yönetmesini sağlar. Ayrıca yeni öğrenciler eklenebilir ve mevcut öğrenciler silinebilir, öğrencilerle birlikte tüm planları da silinebilir.
 
-##### API Hakkında:
-Bu api bir öğrenci planlama aracı olarak hizmet veriyor. 
-Öğrenci belirlediği tarih aralıkları ile kendi planlarını oluşturabilir.
-Planlar zaman çakışmasına karşı API tarafından kontrol edilir.
-Oluşturduğu planlar üzerinde düzenlemeler yapabilir, planlarını silebir.
-Yeni öğrenci eklenebilir. Öğrenci silinebilir, kendisiyle beraber bütün planları da silinir.
-
-
+Temel Özellikler
+* Plan Oluşturma: Öğrenciler belirli tarih aralıklarında planlar oluşturabilirler.
+* Zaman Çakışma Kontrolü: Oluşturulan planlar, zaman çakışmalarına karşı kontrol edilir.
+* Plan Düzenleme: Mevcut planlar üzerinde değişiklik yapılabilir.
+* Plan Silme: Oluşturulan planlar silinebilir.
+* Öğrenci Yönetimi: Yeni öğrenciler eklenebilir ve mevcut öğrenciler silinebilir. Bir öğrenci silindiğinde, ona ait tüm planlar da silinir.
