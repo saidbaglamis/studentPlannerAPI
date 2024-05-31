@@ -1,7 +1,7 @@
 ### StudentPlannerAPI
 #### Giriş
 Merhaba. Bu API, bana gönderilen bir case için tarafımca yazılmıştır. Öğrencilerin planlarını yönetmelerine yardımcı olmak amacıyla tasarlanmıştır.
-**İsteğe bağlı seçenecekler de dahil olmak üzere case içindeki bütün beklentiler karşılanmıştır.**
+**İsteğe bağlı seçenekler de dahil olmak üzere case içindeki bütün beklentiler karşılanmıştır.**
 #### Kullanılan Teknolojiler
 * **Go**: API geliştirme için ana programlama dili.
 * **Gorm**: Go için ORM (Object-Relational Mapping) kütüphanesi, veri tabanı işlemleri için kullanıldı.
