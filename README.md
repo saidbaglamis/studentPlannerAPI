@@ -72,18 +72,19 @@ dsn := "root:password@tcp(127.0.0.1:3306)/plannerDB?charset=utf8mb4&parseTime=Tr
 #### Endpointler
 ```
         //student handlerlar
-GET	    "/student"      //Bütün öğrencileri ve bilgilerini döndürür
-GET	    "/student/:id"  //Id'si verilen öğrenci ve bilgilerini döndürür
-POST        "/student"  //Öğrenci oluşturur
+GET	    "/student"          //Bütün öğrencileri ve bilgilerini döndürür
+GET	    "/student/:id"      //ID'si verilen öğrenci ve bilgilerini döndürür
+POST        "/student"          //Öğrenci oluşturur
 PUT	    "/student/:id"      //ID'si verilen öğrenci bilgilerini günceller
 DELETE	    "/student/:id"      //ID'si verilen öğrenciyi ve bilgilerini siler
 
 	//plan handlerlar
-	"/plan/:id"
-	"/weekly/:id"
-	"/monthly/:id"
-	"/plan"
-	"/plan/:id"
+GET	    "/plan/:id"         //ID'si verilen plan bilgilerini döndürür
+GET	    "/weekly/:id"       //ID'si verilen haftalık plan bilgilerini döndürür
+GET	    "/monthly/:id"      //ID'si verilen aylık plan bilgilerini döndürür
+POST	    "/plan"             //Manuel plan oluşturur
+PUT	    "/plan/:id"         //ID'si verilen plan bilgilerini günceller
+DELETE	    "/plan/:id"         //ID'si verilen planı siler
 ```
 ### Faydalı Kaynaklar
 
