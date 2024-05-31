@@ -18,3 +18,4 @@ StudentPlannerAPI, öğrencilerin belirli tarih aralıklarında planlar oluştur
 * Plan Silme: Oluşturulan planlar silinebilir.
 * Öğrenci Yönetimi: Yeni öğrenciler eklenebilir ve mevcut öğrenciler silinebilir. 
 * Bir öğrenci silindiğinde, ona ait tüm planlar da silinir.
+* Listeleme: Seçilen öğrenci için bulunduğu hafta veya aya göre planları listelenebilir.
