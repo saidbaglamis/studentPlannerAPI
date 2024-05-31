@@ -49,6 +49,42 @@ dsn := "root:password@tcp(127.0.0.1:3306)/plannerDB?charset=utf8mb4&parseTime=Tr
 ```
 **"plannerDB" yazan yeri kendi makinenizdeki çalışmak istediğiniz database ismiyle değiştirip bağlantı kurmanız gerekiyor**
 
+**İlk çalıştırmada eğer veritabanınız boş ise MySQL Workbench veya benzeri bir program ile tablolara manuel girdi yapabilir ya da Postman kullanarak POST request body ile girdi sağlayıp veritabanınızı doldurabilirsiniz.**
+##### Sizin için örnek bir JSON bırakıyorum
+```
+{
+    "Email": "ornek@posta.com",
+    "Name": "Said Baglamis",
+    "SchoolNumber": "1453",
+    "Class": "12/A",
+    "Plans": [
+        {
+            "StudentID": 1,
+            "PlanInfo": "OOP lab ödevi",
+            "PlanStatus": "iptal",
+            "StartDate": "2024-06-01T16:00:00+03:00",
+            "EndDate": "2024-06-01T17:00:00+03:00"
+
+        }
+    ]
+}
+```
+#### Endpointler
+```
+        //student handlerlar
+GET	    "/student"      //Bütün öğrencileri ve bilgilerini döndürür
+GET	    "/student/:id"  //Id'si verilen öğrenci ve bilgilerini döndürür
+POST        "/student"  //Öğrenci oluşturur
+PUT	    "/student/:id"      //ID'si verilen öğrenci bilgilerini günceller
+DELETE	    "/student/:id"      //ID'si verilen öğrenciyi ve bilgilerini siler
+
+	//plan handlerlar
+	"/plan/:id"
+	"/weekly/:id"
+	"/monthly/:id"
+	"/plan"
+	"/plan/:id"
+```
 ### Faydalı Kaynaklar
 
 Bu API'yi yazarken karşılaştığım ve sizin de karşılaşabileceğiniz hata ve sorunları gidermede yararlı bulduğum içerik ve platformlar:
