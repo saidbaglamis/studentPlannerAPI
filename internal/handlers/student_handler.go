@@ -1,4 +1,4 @@
-package services
+package handlers
 
 import (
 	"github.com/labstack/echo/v4"
@@ -7,7 +7,7 @@ import (
 	"studentPlanner/internal/models"
 )
 
-func GetStudents(c echo.Context) error {
+func GetAllStudents(c echo.Context) error {
 	var students []models.Student
 	database.Db.Preload("Plans").Find(&students)
 	return c.JSON(http.StatusOK, students)
